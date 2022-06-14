@@ -11,6 +11,8 @@
     --accent-bg-color: #F5F4FA;
     --address-color: rgba(255, 255, 255, 0.6);
     --secondary-bg-text: #2F303A;
+    --border-color: #EEEEEE;
+    --border-color-line: #ECECEC;
 }
 
 body {
@@ -30,12 +32,25 @@ body {
     text-decoration: none;
 }
 
+
 /* Header */
 
-.main-nav, 
+.header {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--border-color-line);
+}
+
+.main-nav,
 .nav {
     display: flex;
     align-items: center;
+}
+
+.header .container {
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 
@@ -53,15 +68,6 @@ body {
 
 }
 
-.logo-secondary {
-    color: var(--secondary-text-color);
-    text-decoration: none;
-
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-}
 
 .accent {
     color: var(--accent-color);
@@ -78,6 +84,7 @@ body {
     display: flex;
     margin-left: 93px;
 }
+
 .site-contacts {
     display: flex;
     margin-left: auto;
@@ -87,7 +94,8 @@ body {
 .site-nav .item:not(:last-child) {
     margin-right: 50px;
 }
-.site-contacts .item + .item {
+
+.site-contacts .item+.item {
     margin-left: 50px;
 }
 
@@ -101,7 +109,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    
+
 }
 
 .site-nav .link:hover,
@@ -122,21 +130,21 @@ body {
     letter-spacing: 0.02em;
 }
 
-
-
 /* hero */
 .hero {
     background-color: var(--secondary-bg-text);
-    
     text-align: center;
+    padding-bottom: 200px;
 }
 
 .hero-title {
+    padding-top: 200px;
+    padding-bottom: 30px;
+
     color: var(--secondary-text-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -156,18 +164,46 @@ body {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    border:none;
-    
-    
+    border: none;
 }
 
 /* section */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-portfolio {
+    padding-top: 0px;
+    padding-bottom: 94px;
+}
+
+.container {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .section-title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+.section-strengths {
+    display: flex;
+
+    margin-left: auto;
+    margin-right: auto;
+
+
 }
 
 .section .strengths {
@@ -176,8 +212,48 @@ body {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    
+
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+
 }
+
+.section-strengths .text+.text {
+    margin-left: 30px;
+}
+
+.section-strengths .text {
+    width: 270px;
+
+}
+
+.strengths-item {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Portfolio main */
+
+.portfolio .item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-portfolio .img+.img {
+    margin-left: 30px;
+}
+
+
+.section-portfolio .section-title {
+    margin-bottom: 50px;
+}
+
+.section-portfolio .portfolio {
+    display: flex;
+}
+
+/* Team */
 
 .section-team .name {
     color: var(--title-text-color);
@@ -185,14 +261,28 @@ body {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .section-team {
     background-color: var(--accent-bg-color);
 }
 
-.section-team .members {
+.section-team .section-title {
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+.section-team .team {
+    display: flex;
+    padding-bottom: 94px;
+}
+
+.section-team .member {
     background-color: var(--secondary-text-color);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .section-team .profession {
@@ -200,6 +290,21 @@ body {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.section-team .member:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+
+.section-team .name {
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 
@@ -207,7 +312,23 @@ body {
 
 .footer {
     background-color: var(--secondary-bg-text);
+
 }
+
+.footer .container {
+    padding-top: 90px;
+}
+
+.container .logo-secondary {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
 
 /* Address */
 
@@ -215,6 +336,8 @@ body {
     color: var(--secondary-text-color);
     font-style: normal;
     line-height: 1.71;
+    padding-top: 20px;
+    padding-bottom: 9px;
 }
 
 .address .link {
@@ -223,11 +346,25 @@ body {
     line-height: 1.71;
 }
 
+.address .mail {
+    padding-bottom: 9px;
+}
+
+.address .tel {
+    padding-bottom: 60px;
+}
+
 
 
 /* Filter */
 
+.filter {
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
 .filter-button {
+    padding: 6px 22px;
 
     color: var(--title-text-color);
     font-family: inherit;
@@ -235,7 +372,8 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    border:none;
+    border: none;
+    border-radius: 4px;
 }
 
 .filter-button:hover,
@@ -246,9 +384,59 @@ body {
 
 /* Portfolio */
 
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.portfolio-list .img {
+    display: flex;
+}
+
+.portfolio-list {
+    padding-bottom: 20px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.portfolio-list {
+    box-sizing: border-box;
+    width: 370px;
+    height: 404px;
+    left: 215px;
+    top: 260px;
+
+
+    border: 1px solid var(--border-color);
+}
+
+.portfolio-list:nth-last-child(-n + 3) {
+    margin-bottom: 94px;
+}
+
+
+
+.portfolio-list:nth-child(3n) {
+    margin-right: 0;
+}
+
+.container .filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.filter .item+.item {
+    margin-left: 9px;
+}
 
 .portfolio .title {
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 24px;
+
+
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -257,8 +445,13 @@ body {
 }
 
 .portfolio .text {
+    margin: 0;
+    padding-top: 4px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+
+
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.88;
 }
-
