@@ -11,34 +11,46 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <!--Шапка сайта-->
     <header class="header">
-      <nav>
-        <a href="./index.html" class="logo"><span class="accent">Web</span> Studio</a>
-        <ul class="site-nav list">
-          <li>
-            <a href="" class="link"><span class="current">Студия</span></a>
-          </li>
-          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
-        </ul>
-      </nav>
+      <div class="container main-nav">
+        <nav class="nav">
+          <a href="./index.html" class="logo"
+            ><span class="accent">Web</span>Studio</a
+          >
+          <ul class="site-nav list">
+            <li class="item">
+              <a href="" class="link"><span class="current">Студия</span></a>
+            </li>
+            <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
+          </ul>
+        </nav>
 
-      <ul class="site-contacts list">
-        <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="link">+380961111111</a></li>
-      </ul>
+        <ul class="site-contacts list">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="item"><a href="tel:+380961111111" class="link">+380961111111</a></li>
+        </ul>
+      </div>
     </header>
 
     <main>
       <!-- Герой -->
 
       <section class="hero">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+        <h1 class="hero-title list">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="button">Заказать услугу</button>
       </section>
 
@@ -48,24 +60,32 @@
         <ul class="section-strengths list">
           <li>
             <h3 class="strengths">Внимание к деталям</h3>
-            <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+            <p>
+              Идейные соображения, а также начало повседневной работы по
+              формированию позиции.
+            </p>
           </li>
           <li>
             <h3 class="strengths">Пунктуальность</h3>
             <p>
-              Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+              Задача организации, в особенности же рамки и место обучения кадров
+              влечет за собой.
             </p>
           </li>
           <li>
             <h3 class="strengths">Планирование</h3>
             <p>
-              Равным образом консультация с широким активом в значительной степени обуславливает.
+              Равным образом консультация с широким активом в значительной
+              степени обуславливает.
             </p>
           </li>
 
           <li>
             <h3 class="strengths">Современные технологии</h3>
-            <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+            <p>
+              Значимость этих проблем настолько очевидна, что реализация
+              плановых заданий.
+            </p>
           </li>
         </ul>
       </section>
@@ -124,11 +144,17 @@
 
     <!-- Футер -->
     <footer class="footer">
-      <a href="" class="logo-secondary"><span class="accent">Web</span> Studio</a>
+      <a href="" class="logo-secondary"
+        ><span class="accent">Web</span>Studio</a
+      >
       <address>
         <ul class="address list">
           <li class="text">г. Киев, пр-т Леси Украинки, 26</li>
-          <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="link"
+              >info@devstudio.com</a
+            >
+          </li>
           <li><a href="tel:+380961111111" class="link">+380961111111</a></li>
         </ul>
       </address>

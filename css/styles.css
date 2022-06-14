@@ -21,6 +21,23 @@ body {
     letter-spacing: 0.03em;
 }
 
+/* Utilities */
+
+.portfolio .link,
+.site-nav .link,
+.site-contacts .link,
+.address .link {
+    text-decoration: none;
+}
+
+/* Header */
+
+.main-nav, 
+.nav {
+    display: flex;
+    align-items: center;
+}
+
 
 
 /* logo */
@@ -52,14 +69,39 @@ body {
 
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* navigation */
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+.site-contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+.site-contacts .item + .item {
+    margin-left: 50px;
+}
+
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--title-text-color);
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    
 }
 
 .site-nav .link:hover,
@@ -80,9 +122,13 @@ body {
     letter-spacing: 0.02em;
 }
 
+
+
 /* hero */
 .hero {
     background-color: var(--secondary-bg-text);
+    
+    text-align: center;
 }
 
 .hero-title {
@@ -90,14 +136,19 @@ body {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
+
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
+
 /* Button */
 
 .button {
+    border-radius: 4px;
+    padding: 10px 32px;
+    display: inline-block;
+
     color: var(--secondary-text-color);
     background-color: var(--accent-color);
     font-family: inherit;
@@ -106,6 +157,7 @@ body {
     line-height: 1.88;
     letter-spacing: 0.06em;
     border:none;
+    
     
 }
 
@@ -210,9 +262,3 @@ body {
     line-height: 1.88;
 }
 
-.portfolio .link,
-.site-nav .link,
-.site-contacts .link,
-.address .link {
-    text-decoration: none;
-}
