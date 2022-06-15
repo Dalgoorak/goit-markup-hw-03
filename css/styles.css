@@ -43,6 +43,26 @@ p {
     margin: 0;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.section-main {
+    margin-top: 94px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 
 /* Header */
 
@@ -182,10 +202,7 @@ p {
 }
 
 /* section */
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
 
 
 
@@ -290,6 +307,11 @@ p {
     border-radius: 0px 0px 4px 4px;
 }
 
+.team .text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 
 .section-team .name {
     color: var(--title-text-color);
@@ -300,7 +322,7 @@ p {
 }
 
 .section-team .profession {
-    margin-bottom: 30px;
+    
 
     color: var(--primary-text-color);
     font-size: 16px;
@@ -313,7 +335,6 @@ p {
 }
 
 .section-team .name {
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 
