@@ -261,8 +261,7 @@ p {
 /* Portfolio main */
 
 .section-portfolio {
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 0;
 }
 
 .portfolio .item {
@@ -289,8 +288,7 @@ p {
 
 .section-team {
     background-color: var(--accent-bg-color);
-    /* padding-top: 94px;
-    padding-bottom: 94px; */
+
 }
 
 .section-team .section-title {
@@ -300,6 +298,12 @@ p {
 
 .section-team .team {
     display: flex;
+}
+
+.section-team .img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .section-team .member {
@@ -322,7 +326,7 @@ p {
 }
 
 .section-team .profession {
-    
+
 
     color: var(--primary-text-color);
     font-size: 16px;
@@ -337,9 +341,6 @@ p {
 .section-team .name {
     margin-bottom: 10px;
 }
-
-.profession {}
-
 
 /* Footer */
 
@@ -456,11 +457,10 @@ p {
 }
 
 .portfolio .portfolio-title {
-    box-sizing: border-box;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
-  /* border-right: 1px solid var(--border-color);
+    /* border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color); */
 
